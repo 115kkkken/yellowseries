@@ -256,12 +256,12 @@
   }
 
   const leaders = [
-    { id:'L_D_A', name:'大祭司長 亞瑟', type:'demon', img: imgForId('L_D_A') },
+    { id:'L_D_A', name:'大祭司長 皮提亞', type:'demon', img: imgForId('L_D_A') },
     { id:'L_D_B', name:'眾神之星 亞瑟', type:'demon', img: imgForId('L_D_B') },
     { id:'L_T_A', name:'聖光教皇 烏爾班二世', type:'tomb',  img: imgForId('L_T_A') },
-    { id:'L_T_B', name:'聖潔者 烏爾班二世', type:'tomb',  img: imgForId('L_T_B') },
-    { id:'L_N_A', name:'幽冥 領主 A', type:'nether', img: imgForId('L_N_A') },
-    { id:'L_N_B', name:'幽冥 領主 B', type:'nether', img: imgForId('L_N_B') }
+    { id:'L_T_B', name:'聖潔者 貞德', type:'tomb',  img: imgForId('L_T_B') },
+    { id:'L_N_A', name:'大洋領主 若昂', type:'nether', img: imgForId('L_N_A') },
+    { id:'L_N_B', name:'海神 尼普頓', type:'nether', img: imgForId('L_N_B') }
   ];
 
   const aCardsByType = {
@@ -284,24 +284,29 @@
       
     ],
     nether: [
-      { id:'A_NT_1', name:'幽影獵手', cost:2, maxCopies:3, img: imgForId('A_NT_1') },
-      { id:'A_NT_2', name:'冥火術士', cost:3, maxCopies:2, img: imgForId('A_NT_2') },
-      { id:'A_NT_3', name:'虛無行者', cost:4, maxCopies:1, img: imgForId('A_NT_3') },
-      { id:'A_NT_4', name:'沉默守衛', cost:2, maxCopies:3, img: imgForId('A_NT_4') },
-      { id:'A_NT_5', name:'幽冥博士', cost:1, maxCopies:5, img: imgForId('A_NT_5') }
+      { id:'A_NT_1', name:'摩天海將', cost:6, maxCopies:2, img: imgForId('A_NT_1') },
+      { id:'A_NT_2', name:'巨蟹機甲', cost:5, maxCopies:3, img: imgForId('A_NT_2') },
+      { id:'A_NT_3', name:'海溝隱士', cost:3, maxCopies:3, img: imgForId('A_NT_3') },
+      { id:'A_NT_4', name:'海馬先鋒', cost:3, maxCopies:4, img: imgForId('A_NT_4') },
+      { id:'A_NT_5', name:'海妖塞王', cost:2, maxCopies:3, img: imgForId('A_NT_5') },
+      { id:'A_NT_6', name:'青蛙(召喚物)', cost:0, maxCopies:0, img: imgForId('A_NT_6') },
+      { id:'A_NT_7', name:'海盜信徒', cost:1, maxCopies:5, img: imgForId('A_NT_7') },
+      { id:'A_NT_8', name:'戰列艦(召喚物)', cost:0, maxCopies:0, img: imgForId('A_NT_8') }
+      
     ]
   };
 
   const bCards = [
-    { id:'B_1', name:'雷神泰坦', cost:9, maxCopies:1, img: imgForId('B_1') },
+    { id:'B_1', name:'雷神 泰坦', cost:9, maxCopies:1, img: imgForId('B_1') },
     { id:'B_2', name:'金為師王 理查德', cost:7, maxCopies:1, img: imgForId('B_2') },
-    { id:'B_3', name:'前線增援', cost:3, maxCopies:1, img: imgForId('B_3') }
+    { id:'B_3', name:'大海怪 克拉肯', cost:8, maxCopies:1, img: imgForId('B_3') },
+    { id:'B_4', name:'觸手(召喚物)', cost:0, maxCopies:0, img: imgForId('B_4') }
   ];
 
   const cCards = [
     { id:'c_1', name:'鈦晶加工器', cost:3, maxCopies:3, img: imgForId('C_1') },
     { id:'c_2', name:'鐵刺傭兵團', cost:1, maxCopies:3, img: imgForId('C_2') },
-    { id:'c_3', name:'矮人護衛', cost:2, maxCopies:3, img: imgForId('C_3') },
+    { id:'c_3', name:'矮人護衛', cost:3, maxCopies:3, img: imgForId('C_3') },
     { id:'c_4', name:'復仇之魂', cost:2, maxCopies:3, img: imgForId('C_4') },
     { id:'c_5', name:'外交使節', cost:3, maxCopies:2, img: imgForId('C_5') },
     { id:'c_6', name:'哨塔工程兵', cost:1, maxCopies:3, img: imgForId('C_6') },
@@ -313,9 +318,9 @@
     { id:'c_12', name:'嗜血液叉', cost:4, maxCopies:3, img: imgForId('C_12') },
     { id:'c_13', name:'聰慧戰略家 漢尼拔', cost:0, maxCopies:1, img: imgForId('C_13') },
     { id:'c_14', name:'烈火龍王', cost:0, maxCopies:1, img: imgForId('C_14') },
-    { id:'c_14', name:'大聖天兵 悟昆', cost:0, maxCopies:1, img: imgForId('C_15') },
-    { id:'c_14', name:'重型弩炮', cost:3, maxCopies:3, img: imgForId('C_16') },
-    { id:'c_14', name:'祥端流金龍', cost:7, maxCopies:1, img: imgForId('C_17') }
+    { id:'c_15', name:'大聖天兵 悟昆', cost:0, maxCopies:1, img: imgForId('C_15') },
+    { id:'c_16', name:'重型弩炮', cost:3, maxCopies:3, img: imgForId('C_16') },
+    { id:'c_17', name:'祥端流金龍', cost:7, maxCopies:1, img: imgForId('C_17') }
   ];
 
   // STATE
